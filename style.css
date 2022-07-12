@@ -1,122 +1,511 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-body{
-    background-color: antiquewhite;
-}
-
 *{
     margin: 0;
-    padding: 0;
+    padding; 0;
 }
 
-nav{
-    font-family: 'Ubuntu', sans-serif;
-}
-
-nav ul{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    height: 65px;
-    background-color: black;
-    color: white;
-}
-
-nav ul li{
-    padding: 0 12px;
-}
-.brand img{
-    width: 44px;
-    padding: 0 8px;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 1.3rem;
-}
-
-.container{
-    min-height: 72vh;
-    background-color: black;
-    color: white;
-   font-family: 'Varela Round', sans-serif;
-   display: flex;
-   margin: 23px auto;
-   width: 70%;
-   border-radius: 12px;
-   padding: 34px;
-   background-image: url('bg.jpg');
-}
-
-.bottom{
-    position: sticky;
-    bottom: 0;
-    height: 130px;
-    background-color: black;
-    color: white;
-    display: flex;
+.logo{
+    width:30%;
+    display:flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
 }
-
-.icons{
-    margin-top: 14px; 
-}
-.icons i{
-    cursor: pointer;
-}
-
-#myProgressBar{
-    width: 80vw; 
-    cursor: pointer;
-}
-
-.songItemContainer{
-    margin-top: 74px;
-}
-
-.songItem{
-    height: 50px;
-    display: flex;
-    background-color: white;
+.logo img{
+    width: 50%;
     
-    color: black;
-    margin: 12px 0;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 34px;
 }
 
-.songItem img{
-    width: 43px;
-    margin: 0 23px;
-    border-radius: 34px;
+.navbar{
+    display: flex;
+}
+.nav-list{
+    width: 50%;
+    background-color:rgb(223, 203, 203);
+    display: flex;
+    align-item: center;
+
 }
 
-.timestamp{
-    margin: 0 23px;
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+
+}
+  
+.navlist li a:hover{
+    text-decoration: none;
+    color: grey;
+
+
 }
 
-.timestamp i{
-    cursor: pointer;
+.rightNav{
+    background-color:rgb(98, 120, 120);
+    width: 50%;
+    text-align: right;
 }
 
-.songInfo{
-    position: absolute;
-    left: 10vw;
-    font-family: 'Varela Round', sans-serif;
+.search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
 }
 
-.songInfo img{
-    opacity: 0;
-    transition: opacity 0.4s ease-in;
-}
 
-@media only screen and (max-width: 1100px) {
-    body {
-      background-color: red;
-    }
+
+
+
+
+
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
   }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+  
+
+
+
+
+
+  /*adding artist */
+  .artist{
+    background-color:aliceblue ;
+    height: 533px;
+  }
+  .text-center{
+    text-align: center;
+    
+  }
+
+  .form{
+    max-width: 344px;
+    margin: auto;
+  }
+
+  .form input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid rgb(98, 120, 120);
+    border-radius: 6px;
+
+  }
+
+  /*adding song 1st heading */
+  .Addsong{
+    background-color:aliceblue ;
+    height: 800px;
+  }
+  .text-align{
+    text-align: center;
+  }
+
+  /*now for the song form */
+
+  .form1{
+    max-width: 344px;
+    margin: auto;
+  }
+
+  .form1 input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid rgb(98, 120, 120);
+    border-radius: 6px;
+
+  }
+
+
+ .addingsong{
+  background-color: bisque;
+
+ }
+  
+ .playlist{
+  text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+/* star rating */
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+
+/* star rating1 */
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate1 {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate1:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate1:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate1:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate1 > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate1:not(:checked) > label:hover,
+.rate1:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate1 > input:checked + label:hover,
+.rate1 > input:checked + label:hover ~ label,
+.rate1 > input:checked ~ label:hover,
+.rate1 > input:checked ~ label:hover ~ label,
+.rate1 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* star rating2 */
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate2 {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate2:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate2:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate2:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate2 > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate2:not(:checked):not(:checked) > label:hover,
+.rate2:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate2 > input:checked + label:hover,
+.rate2 > input:checked + label:hover ~ label,
+.rate2 > input:checked ~ label:hover,
+.rate2 > input:checked ~ label:hover ~ label,
+.rate2 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+/* star rating3 */
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate3 {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate3:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate3:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate3:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate3 > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate3:not(:checked) > label:hover,
+.rate3:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate3 > input:checked + label:hover,
+.rate3 > input:checked + label:hover ~ label,
+.rate3 > input:checked ~ label:hover,
+.rate3 > input:checked ~ label:hover ~ label,
+.rate3 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* star rating4 */
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate4 {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate4:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate4:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate4:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate4 > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate4:not(:checked) > label:hover,
+.rate4:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate4 > input:checked + label:hover,
+.rate4 > input:checked + label:hover ~ label,
+.rate4 > input:checked ~ label:hover,
+.rate4 > input:checked ~ label:hover ~ label,
+.rate4 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+
+
+
+/* star rating5 */
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate5 {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate5:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate5:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate5:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate5> input:checked ~ label {
+  color: #ffc700;    
+}
+.rate4:not(:checked) > label:hover,
+.rate4:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate5 > input:checked + label:hover,
+.rate5 > input:checked + label:hover ~ label,
+.rate5 > input:checked ~ label:hover,
+.rate5 > input:checked ~ label:hover ~ label,
+.rate5 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+
+
+/* star rating6 */
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate6 {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate6:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate6:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate6:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate6> input:checked ~ label {
+  color: #ffc700;    
+}
+.rate6:not(:checked) > label:hover,
+.rate6:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate6 > input:checked + label:hover,
+.rate6 > input:checked + label:hover ~ label,
+.rate6 > input:checked ~ label:hover,
+.rate6 > input:checked ~ label:hover ~ label,
+.rate6 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+
+
+
+.vertical-menu {
+  width: 2000px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D; /* Add a green color to the "active/current" link */
+  color: white;
+}
+/* scoll */
+table {
+  width: 1500px; /* 140px * 5 column + 16px scrollbar width */
+  border-spacing: 0;
+}
+
+tbody, thead tr { display: block; }
+
+tbody {
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+tbody td, thead th {
+  width: 800px;
+}
+
+thead th:last-child {
+  width: 156px; /* 140px + 16px scrollbar width */
+}
+
+
+
+
+   
+   
+  
