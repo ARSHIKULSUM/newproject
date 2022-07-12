@@ -1,93 +1,328 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Spotify - Your favourite music is here</title>
-        <link rel="stylesheet" href="style.css">
-        </head>
-<body>
-    <nav>
-        <ul>
-            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
-            <li>Home</li>
-            <li>About</li>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DELTA MUSIC - Vibe here..</title>
+  </head>
+  <body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo"><img src="coverdel8.jpg" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
+        <div class="rightNav">
+          <input type="text" name="search" id="search">
+          <button class="btn btn-sm">Search</button>
+        </div>
     </nav>
+    <section class="firstSection">
+      <style>
+        table, th, td {
+           border:0px solid black;
+           background-color: rgb(212, 240, 246);
+        }
+     </style>
+      
+    <section>
+      <table> <caption>FAVORITE SONGS</caption>
+          <tr>
+            <th>ARTWORK</th>
+            <th>SONG</th>
+            <th>DATE OF RELEASE</th>
+            <th>ARTIST</th>
+            <th>RATE</th>
+          </tr>
+          <tr>
+            <td><img src="coverdel6.jpg" alt="cover1" width="100" height="100"></td>
+            <td>Love Story</td>
+            <td>april 16, 2015</td>
+            <td>Mac Frade</td>
+            <td>
+              <div class="rate1">
+                <input type="radio" id="star15" name="rate" value="5" />
+                <label for="star15" title="text">5 stars</label>
+                <input type="radio" id="star14" name="rate" value="4" />
+                <label for="star14" title="text">4 stars</label>
+                <input type="radio" id="star13" name="rate" value="3" />
+                <label for="star13" title="text">3 stars</label>
+                <input type="radio" id="star12" name="rate" value="2" />
+                <label for="star12" title="text">2 stars</label>
+                <input type="radio" id="star11" name="rate" value="1" />
+                <label for="star11" title="text">1 star</label></div>
+            </td>
+            </td>
+            
+          </tr>
+          <tr>
+            <td><img src="coverdel2.jpg" alt="cover1" width="100" height="100"></td>
+            <td>Life Lesson</td>
+            <td>march 19, 2018</td>
+            <td>Shirley Setia</td>
+            <td>
+              <div class="rate2">
+                <input type="radio" id="star10" name="rate" value="5" />
+                <label for="star10" title="text">5 stars</label>
+                <input type="radio" id="star9" name="rate" value="4" />
+                <label for="star9" title="text">4 stars</label>
+                <input type="radio" id="star8" name="rate" value="3" />
+                <label for="star8" title="text">3 stars</label>
+                <input type="radio" id="star7" name="rate" value="2" />
+                <label for="star7" title="text">2 stars</label>
+                <input type="radio" id="star6" name="rate" value="1" />
+                <label for="star6" title="text">1 star</label></div>
+            </td>
+            
+          </tr>
+          <tr>
+            <td><img src="coverdel3.jpg" alt="cover1" width="100" height="100"></td>
+            <td>Love Story</td>
+            <td>april 16, 2015</td>
+            <td>Mac Frade</td>
+            <td>
+              <div class="rate">
+                <input type="radio" id="star15" name="rate" value="5" />
+                <label for="star15" title="text">5 stars</label>
+                <input type="radio" id="star14" name="rate" value="4" />
+                <label for="star14" title="text">4 stars</label>
+                <input type="radio" id="star13" name="rate" value="3" />
+                <label for="star13" title="text">3 stars</label>
+                <input type="radio" id="star12" name="rate" value="2" />
+                <label for="star12" title="text">2 stars</label>
+                <input type="radio" id="star11" name="rate" value="1" />
+                <label for="star11" title="text">1 star</label></div>
+            </td>
+            </td>
+            
+          </tr>
+          <tr>
+            <td><img src="coverdel4.jpg" alt="cover1" width="100" height="100"></td>
+            <td>Love Story</td>
+            <td>april 16, 2015</td>
+            <td>Mac Frade</td>
+            <td>
+              <div class="rate3">
+                <input type="radio" id="star15" name="rate" value="5" />
+                <label for="star15" title="text">5 stars</label>
+                <input type="radio" id="star14" name="rate" value="4" />
+                <label for="star14" title="text">4 stars</label>
+                <input type="radio" id="star13" name="rate" value="3" />
+                <label for="star13" title="text">3 stars</label>
+                <input type="radio" id="star12" name="rate" value="2" />
+                <label for="star12" title="text">2 stars</label>
+                <input type="radio" id="star11" name="rate" value="1" />
+                <label for="star11" title="text">1 star</label></div>
+            </td>
+            </td>
 
-    <div class="container">
-        <div class="songList">
-            <h1>Best of NCS - No Copyright Sounds</h1>
-            <div class="songItemContainer">
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-            </div>
-        </div>
-        <div class="songBanner"></div>
-    </div>
+          </tr>  
+            <tr>
+              <td><img src="coverdel5.jpg" alt="cover1" width="100" height="100"></td>
+              <td>Love Story</td>
+              <td>april 16, 2015</td>
+              <td>Mac Frade</td>
+              <td>
+                <div class="rate4">
+                  <input type="radio" id="star15" name="rate" value="5" />
+                  <label for="star15" title="text">5 stars</label>
+                  <input type="radio" id="star14" name="rate" value="4" />
+                  <label for="star14" title="text">4 stars</label>
+                  <input type="radio" id="star13" name="rate" value="3" />
+                  <label for="star13" title="text">3 stars</label>
+                  <input type="radio" id="star12" name="rate" value="2" />
+                  <label for="star12" title="text">2 stars</label>
+                  <input type="radio" id="star11" name="rate" value="1" />
+                  <label for="star11" title="text">1 star</label></div>
+              </td>
+              </td>
+            </tr>  
+            <tr>
+                <td><img src="coverdel6.jpg" alt="cover1" width="100" height="100"></td>
+                <td>Love Story</td>
+                <td>april 16, 2015</td>
+                <td>Mac Frade</td>
+                <td>
+                  <div class="rate5">
+                    <input type="radio" id="star15" name="rate" value="5" />
+                    <label for="star15" title="text">5 stars</label>
+                    <input type="radio" id="star14" name="rate" value="4" />
+                    <label for="star14" title="text">4 stars</label>
+                    <input type="radio" id="star13" name="rate" value="3" />
+                    <label for="star13" title="text">3 stars</label>
+                    <input type="radio" id="star12" name="rate" value="2" />
+                    <label for="star12" title="text">2 stars</label>
+                    <input type="radio" id="star11" name="rate" value="1" />
+                    <label for="star11" title="text">1 star</label></div>
+                </td>
+                </td>
+                
+            </tr>
+            <tr>
+              <td><img src="coverdel7.jpg" alt="cover1" width="100" height="100"></td>
+              <td>Love Story</td>
+              <td>april 16, 2015</td>
+              <td>Mac Frade</td>
+              <td>
+                <div class="rate6">
+                  <input type="radio" id="star15" name="rate" value="5" />
+                  <label for="star15" title="text">5 stars</label>
+                  <input type="radio" id="star14" name="rate" value="4" />
+                  <label for="star14" title="text">4 stars</label>
+                  <input type="radio" id="star13" name="rate" value="3" />
+                  <label for="star13" title="text">3 stars</label>
+                  <input type="radio" id="star12" name="rate" value="2" />
+                  <label for="star12" title="text">2 stars</label>
+                  <input type="radio" id="star11" name="rate" value="1" />
+                  <label for="star11" title="text">1 star</label></div>
+              </td>
+              </td>
+              
+            </tr>
+              
+            
+            
 
-    <div class="bottom">
-        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
-        <div class="icons">
-            <!-- fontawesome icons -->
-            <i class="fas fa-3x fa-step-backward" id="previous"></i>
-            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
-            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+         
+                     </table>
+      </section>                 
+
+
+
+
+    <section class="SecondSection">
+      <style>
+        table, th, td
+         {
+          border: 1px solid rgb(145, 117, 45);
+          padding: 10px 30px;
+        }
+      </style>
+                      
+    <section>         
+      <table>
+           <caption>FAVORITE ARTISTS</caption>
+            <tr>
+              <th>ARTWORK</th>
+              <th>D.O.B</th>
+              <th>Song</th>
+                           
+            </tr>
+            <tr>
+                            
+              <td>Anne frank</td>
+              <td>march 19, 2018</td>
+              <td>Love Story</td>
+                          
+                            
+                            
+            </tr>
+            <tr>
+                          
+              <td>cruise Stephen</td>
+              <td>march 19, 2018</td>
+              <td>Beautifull nature</td>
+                           
+                            
+            </tr>
+            <tr>
+                          
+              <td>Sap Crew</td>
+              <td>april 05, 2020</td>
+              <td>Rainbow</td>
+                          
+                            
+            </tr>
+            <tr>
+                          
+              <td>Ricky</td>
+              <td>march 19, 2018</td>
+              <td>seven coloured grass</td>
+                           
+                            
+            </tr>
+            <tr>
+                          
+              <td>Sam crew</td>
+              <td>oct 19, 2018</td>
+              <td>Picture Perfect</td>
+                           
+                            
+            </tr>
+            <tr>
+                          
+              <td>Rim</td>
+              <td>march 19, 2018</td>
+              <td>Only for her</td>
+                           
+                            
+            </tr>
+            <tr>
+                          
+              <td>Lemma</td>
+              <td>march 19, 2018</td>
+              <td>Before sunset</td>
+                           
+                            
+            </tr>
+            <tr>
+                          
+              <td>Ramson</td>
+              <td>february 9, 2018</td>
+              <td>To the moon and back</td>
+                           
+                            
+            </tr>
+            <tr>
+                          
+              <td>Rose</td>
+              <td>march 19, 2018</td>
+              <td>Half evening</td>
+                           
+                            
+            </tr>
+            <tr>
+                          
+              <td>Kamlin</td>
+              <td>march 19, 2018</td>
+              <td>Roof Top</td>
+                           
+                            
+            </tr>
+      </table>
+    </section>   
+
+
+    
+    <section class="Addsong">
+     <h2 class="text-align">ADD YOUR SONG</h2>
+     <div class="form1">
+      
+        <input type="text" name="name" placeholder="Enter Song">Song Name</input>
+        <input type="number" name="date" placeholder="dd/mm/yy">Date of Release</input><br><br>
+        <text>Upload Your Song :</text>
+        <input type="file" name="myfile" />
+        <button type="cancel">cancel</button>
+        <button type="submit">Submit</button>
+      </form>
+     </div>    
+     
+    
+    <section class="=artist">
+        <h1 class="text-center">Add Artist</h1>
+        <div class="form">
+          <input  type="text" name="name" id="name" placeholder="Enter Your Name">
+          <input  type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+          <input   type="email" name="email" id="email" placeholder="Email: ex-john091@gmai.com">
+          <textarea  type="text" name="text" id="text" cols="30" rows="10" placeholder="Description about the ARTIST"></textarea> 
+          <button class="btn btn-dark">Submit</button>
         </div>
-        <div class="songInfo">
-            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
-        </div>
-    </div>
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
-</body>
+   
+    
+    
+  </body>
 </html>
